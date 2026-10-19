@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Southery Menu</title>
+  <meta name="description" content="The Southery menu — authentic Malabar food from our cloud kitchen in Edappally, Kochi. Biriyani, Malabar dishes, combo boxes and fresh drinks.">
+  <meta name="theme-color" content="#132721">
+  <meta property="og:title" content="Southery Menu">
+  <meta property="og:description" content="Authentic Malabar food from Edappally, Kochi.">
+  <meta property="og:type" content="website">
+  <link rel="preload" as="image" href="menu/page-1.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --malabar-green: #132721;
+      --mid-green: #1b3830;
+      --warm-ivory: #fdf7e3;
+      --hairline: rgba(253, 247, 227, 0.16);
+      --space-2: 16px;
+      --space-3: 32px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--malabar-green); color: var(--warm-ivory); }
+    body {
+      min-height: 100vh;
+      padding: var(--space-2) var(--space-2) calc(var(--space-3) + env(safe-area-inset-bottom));
+      font-family: "Cabinet Grotesk", "Helvetica Neue", Arial, sans-serif;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+    .page {
+      position: relative;
+      margin: 0;
+      aspect-ratio: 595.276 / 841.89;
+      background: var(--mid-green);
+      border: 1px solid var(--hairline);
+    }
+    .page img { display: block; width: 100%; height: 100%; }
+    .call {
+      position: absolute;
+      left: 10%; right: 12%; top: 84.5%; height: 8%;
+      border-radius: 4px;
+    }
+    .call:focus-visible { outline: 2px solid var(--warm-ivory); outline-offset: 4px; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+    @media (min-width: 900px) { body { padding-top: var(--space-3); } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="sr-only">Southery — Malabar Authentic Flavors. Edappally, Kochi.</h1>
+
+    <figure class="page">
+      <img src="menu/page-1.svg" width="595" height="842" alt="Southery menu cover: Malabar Authentic Flavors. Edappally, Kochi." fetchpriority="high">
+    </figure>
+
+    <figure class="page">
+      <img src="menu/page-2.svg" width="595" height="842" loading="lazy" decoding="async" alt="Combo boxes menu page. Full list below.">
+    </figure>
+
+    <figure class="page">
+      <img src="menu/page-3.svg" width="595" height="842" loading="lazy" decoding="async" alt="Biriyani, Malabar dishes, drinks and extras menu page. Full list below.">
+    </figure>
+
+    <figure class="page">
+      <img src="menu/page-4.svg" width="595" height="842" loading="lazy" decoding="async" alt="A Taste of Authentic Malabar. Also available on Swiggy, Zomato and Toing. Call +91 86100 71212 for direct orders and takeaways.">
+      <a class="call" href="tel:+918610071212" aria-label="Call Southery on +91 86100 71212"></a>
+    </figure>
+
+    <section class="sr-only" aria-label="Menu as text">
+      <h2>Rice Box</h2>
+      <ul><li>Ghee Rice Chicken Combo — ₹249</li><li>Ghee Rice Beef Combo — ₹279</li><li>Biriyani Rice Chicken Combo — ₹259</li><li>Biriyani Rice Beef Combo — ₹289</li></ul>
+      <h2>Pathal Box</h2>
+      <ul><li>Pathal Chicken Combo — ₹219</li><li>Pathal Beef Combo — ₹249</li></ul>
+      <h2>Appam Box</h2>
+      <ul><li>Appam Chicken Combo — ₹209</li><li>Appam Beef Combo — ₹239</li></ul>
+      <h2>Puttu Box</h2>
+      <ul><li>Puttu Chicken Combo — ₹189</li><li>Puttu Beef Combo — ₹219</li></ul>
+      <h2>Porotta Box</h2>
+      <ul><li>Porotta Chicken Combo — ₹229</li><li>Porotta Beef Combo — ₹259</li></ul>
+      <h2>Chapathi Box</h2>
+      <ul><li>Chapathi Chicken Combo — ₹189</li><li>Chapathi Beef Combo — ₹219</li></ul>
+      <h2>Biriyani</h2>
+      <ul><li>Chicken Dum Biriyani — ₹279</li><li>Beef Dum Biriyani — ₹309</li><li>Mutton Dum Biriyani</li><li>Fish Biriyani</li><li>Prawns Biriyani</li></ul>
+      <h2>Malabar Dishes</h2>
+      <ul><li>Chicken Fry — ₹199</li><li>Beef Fry — ₹229</li><li>Chicken Naadan Roast — ₹219</li><li>Beef Roast — ₹249</li><li>Chicken Varutharachathu — ₹239</li><li>Beef Naadan Curry — ₹269</li><li>Chicken Stew — ₹249</li><li>Beef Stew — ₹279</li><li>Mutton Stew</li><li>Vegetable Stew — ₹129</li></ul>
+      <h2>Drinks</h2>
+      <ul><li>Mint Lemon — ₹50</li><li>Pineapple Lemon — ₹50</li><li>Pineapple (cold pressed, no sugar, no water) — ₹169</li><li>Water Melon (cold pressed, no sugar, no water) — ₹139</li><li>Melon Magic — ₹199</li></ul>
+      <h2>Extra</h2>
+      <ul><li>Ghee Rice — ₹169</li><li>Biriyani Rice — ₹179</li></ul>
+      <p>Also available on Swiggy, Zomato and Toing. For direct orders and takeaways call <a href="tel:+918610071212">+91 86100 71212</a>.</p>
+    </section>
+  </main>
+</body>
+</html>
