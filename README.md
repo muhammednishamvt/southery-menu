@@ -3,7 +3,7 @@
 A single page that shows the four Southery menu pages as SVG images, on Malabar green.
 
 - `public/index.html` — the page
-- `public/menu/page-1.svg` … `page-4.svg` — the menu pages (from `UPDATED TAKEAWAY MENU.pdf`)
+- `public/menu/page-1-nov26.svg` … `page-4-nov26.svg` — the menu pages (from `NEW PRICE MENU _ Final Nov2026.pdf`; page 3 photo recompressed to keep it light)
 - `vercel.json` — Vercel settings (serves `public/`, caches the menu images for a day)
 
 No build step. Total size about 1.2 MB.
@@ -26,4 +26,4 @@ npx vercel --prod
 
 ## Updating the menu later
 
-Export the new menu from Illustrator as PDF, replace the SVGs in `public/menu/`, and push to GitHub. Vercel redeploys on its own.
+Export the new menu from Illustrator as PDF, convert each page to SVG (`pdftocairo -svg`), save them under new names (the images are cached for a day), update the names, sizes and the hidden text list in `index.html`, and push to GitHub. Vercel redeploys on its own. Keep each SVG under about 1 MB: recompress any large embedded photo.
